@@ -17,7 +17,7 @@ const cardData = [
 
 const About = () => {
     return (
-        <section className="w-screen h-full text-white bg-gray-900">
+        <section className="w-screen h-full text-white">
             <div className="flex flex-col justify-evenly items-center">
                 <h1 className="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
                 Our Features.

@@ -22,7 +22,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(17 24 39);
+  /* background-color: rgb(17 24 39); */
+  background-image: linear-gradient(rgb(0 0 0 / 0.5),rgb(0 0 0 / 0.8)), url(../public/hero_bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: white;
 }
 

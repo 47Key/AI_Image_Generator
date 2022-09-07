@@ -7,15 +7,14 @@
   align-items: center;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-} */
+#navbarBackground {
+  background: rgb(0 0 0 / 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  bottom: 90%;
+}
+
+#heroText h1 {
+  text-shadow: -1px 1px 1px white;
+}
