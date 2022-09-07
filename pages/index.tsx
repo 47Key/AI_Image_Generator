@@ -1,7 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Card from '../components/Card'
+import About from '../containers/About'
 import Hero from '../containers/Hero'
+import Navbar from '../containers/Navbar'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -13,21 +16,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <main className={styles.main}> */}
+      <Navbar />
       <Hero />
-      {/* </main> */}
+      <About />
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <p>Made by Key the Dev</p>
       </footer>
     </div>
   )

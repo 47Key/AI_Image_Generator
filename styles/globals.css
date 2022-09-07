@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
+:root {
+  display: flex;
+  scroll-behavior: smooth;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-main, --font-hero);
+ 
+  --font-main: 'Poppins', sans-serif;
+  --font-hero: 'Roboto', sans-serif;
+/*
+  --blue-color: #065ae1;
+  --bg-color: #15202B; */
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(17 24 39);
+  color: white;
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -10,4 +34,4 @@
     color: white;
     background: black;
   }
-}
+} */
