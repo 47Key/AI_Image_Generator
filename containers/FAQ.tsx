@@ -4,50 +4,56 @@ import { SiMagento } from 'react-icons/si';
 
 const FAQ = () => {
   return (
-    <div className="w-screen flex flex-col justify-center items-center py-32">
-        <h1 className="text-5xl text-center leading-snug font-extrabold py-10 text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-blue-400 to-purple-500">
+    <div className="w-screen flex flex-col justify-center items-center pb-16">
+        <h1 className="text-5xl p-10 text-center leading-snug font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-rose-400">
           Frequently Asked Questions.
         </h1>
       <div id={styles.faqContainer} className="text-center space-y-4 flex flex-col h-full justify-center items-center">
-        <div className="w-full p-1 rounded-xl bg-gradient-to-r from-rose-400 via-blue-400 to-purple-500">
-          <details className="group" open>
+        <div className="w-full p-0.5 rounded-xl bg-gradient-to-r from-purple-500 to-rose-400 ">
+          <details className="group">
             <summary
-              className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-900"
+              className="flex items-center justify-between p-4 rounded-[9px] cursor-pointer bg-gray-900"
             >
               <h5 className="text-white font-extrabold">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+                What is AI Image Generation/Stable Diffusion?
               </h5>
                 <SiMagento size={20} />
             </summary>
             <div className="bg-gray-900 rounded-lg">
               <p className="px-4 -mt-5 py-10 leading-relaxed text-white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                earum similique!
+                AI Image generation is a tool that allows you to generate images from text inputs, 
+                it allows you to turn your thoughts into a real image, regardless of traditional 
+                artistic skills. 
+
+                Stable Diffusion is a type of AI Image generation, it uses a latent diffusion model 
+                to transform text into images. It can also generate images based off of an image input  
+                and text guidance. Which is a feature we are implementing soon.
               </p>
             </div>
           </details>
         </div>
 
-        <div className="w-full p-1 rounded-xl bg-gradient-to-r from-rose-400 via-blue-400 to-purple-500">
+        <div className="w-full p-0.5 rounded-xl bg-gradient-to-r from-purple-500 to-rose-400 ">
           <details className="group">
 
             <summary
-              className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-900"
+              className="flex items-center justify-between p-4 rounded-[9px] cursor-pointer bg-gray-900"
               >
               <h5 className="font-extrabold text-white pr-5 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+                Is this service free?
               </h5>
               <SiMagento size={20} />
             </summary>
 
             <div className="bg-gray-900 rounded-lg">
               <p className="px-4 -mt-5 py-10 leading-relaxed text-white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                earum similique!
+                Yes it is free ! This link has only been shared with close friends and family, 
+                as well as potential employers of the developer. This website will soon require 
+                authentication and an account to use freely. For the time being it is completely free!
+
+                I want to make sure everyone gets the chance at using this technology, and understand the 
+                future impact that these tools can have on humanity. AI is on the precipice of *magic* 
+                and human ingenuity.
               </p>
             </div>
           </details>

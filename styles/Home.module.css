@@ -31,6 +31,10 @@
   margin-left: 50px;
 }
 
+#heroText {
+  font-size: clamp(2em, 4em, 5em);
+}
+
 #faqContainer {
   width: 50vw;
 }

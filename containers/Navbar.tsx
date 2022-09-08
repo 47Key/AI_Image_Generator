@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 const Navbar = () => {
   return (
     <header id={styles.navbarBackground} className="text-white body-font">
-      <div className="flex flex-wrap w-screen p-5 flex-row justify-between items-center">
+      <div className="flex flex-wrap w-screen p-2 flex-row justify-between items-center">
         {/* <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <span className="ml-3 text-xl">Tailwind Snippets</span>
         </a> */}

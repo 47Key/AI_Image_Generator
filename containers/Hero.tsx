@@ -8,12 +8,12 @@ const Hero = () => {
       id={styles.heroBackground}
       className="w-screen text-white"
     >
-      <div className="px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
+      <div className="px-4 pb-16 pt-16 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 id={styles.heroText} className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-500 via-blue-400 to-rose-500">
-            Bring your Imagination.
-            <span className="sm:block text-white">to Reality.</span>
+          <h1 id={styles.heroText} className="font-extrabold py-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-rose-400">
+            Bring your Imagination
           </h1>
+          <h2 className="font-extrabold text-white text-5xl">to Reality.</h2>
 
           <p className="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
