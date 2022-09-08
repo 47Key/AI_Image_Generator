@@ -16,8 +16,9 @@
 #navbarBackground {
   display: flex;
   background: rgb(0 0 0 / 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.4rem);
+  /* backdrop-filter: opacity(1);   */
+  -webkit-backdrop-filter: blur(5rem);
   position: fixed;
   top: 0;
   width: 100%;
@@ -27,6 +28,11 @@
 #navbarLogo {
   width: 50px;
   height: 50px;
+  margin-left: 50px;
+}
+
+#faqContainer {
+  width: 50vw;
 }
 
 
@@ -38,6 +44,10 @@
   #navbarLogo {
     width: 50px;
     height: 50px;
+  }
+
+  #faqContainer {
+    width: 90vw;
   }
 }
 
@@ -52,6 +62,10 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  /* #faqContainer {
+    width: 90vw;
+  } */
 }
 
 
