@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../styles/Generate.module.css';
+import styles from '../styles/Home.module.css';
 
 const LoadingSpinner = () => {
     return (
-        <div className="flex flex-col justify-center items-center w-16 h-16 p-1 rounded-full animate-spin bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
-            <div className="w-full h-full rounded-full bg-gray-900">
+        <div id={styles.loadingSpinner} className="flex flex-col justify-center items-center w-16 h-16 p-1.5 rounded-full animate-spin bg-gradient-to-r from-purple-500 to-rose-400">
+            <div className="w-full h-full rounded-full bg-gray-900 blur-[3px]">
             </div>
         </div>
     );

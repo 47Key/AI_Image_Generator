@@ -17,9 +17,9 @@ const cardData = [
 
 const About = () => {
     return (
-        <section className="w-screen h-full text-white">
-            <div className="flex flex-col justify-evenly items-center">
-                <h1 className="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+        <section className="w-screen h-full justify-center items-center text-white">
+            <div className="flex flex-col justify-center items-center">
+                <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-blue-400 to-purple-500">
                 Our Features.
                 </h1>
                 <div className="flex flex-row flex-wrap justify-evenly items-center pt-10 ">

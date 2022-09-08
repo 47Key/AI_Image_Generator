@@ -1,5 +1,11 @@
+/*///////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////// MAIN PAGE ///////////////////////////////// */
+/*///////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////////////////////////////// */
+
 .container {
-  width: 100%;
+  width: vw;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -8,13 +14,83 @@
 }
 
 #navbarBackground {
+  display: flex;
   background: rgb(0 0 0 / 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   position: fixed;
-  bottom: 90%;
+  top: 0;
+  width: 100%;
+  z-index: 90;
 }
 
-#heroText h1 {
-  text-shadow: -1px 1px 1px white;
+#navbarLogo {
+  width: 50px;
+  height: 50px;
+}
+
+
+@media only screen and (max-width:765px) {
+  #heroText {
+    margin-top: 5rem;
+  }
+
+  #navbarLogo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  #card {
+    margin: 10px 5px;
+  }
+
+  #cardInside {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////// IMAGE GENERATION PAGE /////////////////////////// */
+/*///////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////////////////////////////// */
+
+/* #loadingSpinner {
+  border-top-color: transparent;
+  animation-name: loadingSpinner;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+} */
+/* 
+@keyframes loadingSpinner {
+  0% {
+    transform: rotate(0deg), scale(1.2);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: rotate(360deg), scale(1.2);
+  }
+} */
+
+#imageContainer {
+  max-width: 800px;
+  max-height: 800px;
+}
+
+@media only screen and (max-width: 500px) {
+  #imageContainer {
+      width: 90%;
+      margin: 2px;
+      margin-bottom: 10px;
+  }
 }

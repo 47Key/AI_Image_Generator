@@ -6,38 +6,31 @@
 
 :root {
   display: flex;
-  scroll-behavior: smooth;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  scroll-behavior: smooth;
+  
   font-family: var(--font-main, --font-hero);
- 
   --font-main: 'Poppins', sans-serif;
   --font-hero: 'Roboto', sans-serif;
-/*
-  --blue-color: #065ae1;
-  --bg-color: #15202B; */
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  /* background-color: rgb(17 24 39); */
-  background-image: linear-gradient(rgb(0 0 0 / 0.5),rgb(0 0 0 / 0.8)), url(../public/hero_bg.jpeg);
+  background-image: linear-gradient(rgb(0 0 0 / 0.8),rgb(0 0 0 / 0.1)), url(../public/hero_bg.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   color: white;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */

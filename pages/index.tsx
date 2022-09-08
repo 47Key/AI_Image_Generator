@@ -1,11 +1,10 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Card from '../components/Card'
-import About from '../containers/About'
-import Hero from '../containers/Hero'
-import Navbar from '../containers/Navbar'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import About from '../containers/About';
+import Hero from '../containers/Hero';
+import Navbar from '../containers/Navbar';
+import FAQ from '../containers/FAQ';
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +18,8 @@ const Home: NextPage = () => {
       <Navbar />
       <Hero />
       <About />
-
+      <FAQ />
+      
       <footer className={styles.footer}>
         <p>Made by Key the Dev</p>
       </footer>
