@@ -5,7 +5,7 @@
 /*///////////////////////////////////////////////////////////////////////////// */
 
 .container {
-  width: vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -31,18 +31,17 @@
   margin-left: 50px;
 }
 
-#heroText {
-  font-size: clamp(2em, 4em, 5em);
+#heroText h1 {
+  font-size: 4em;
 }
 
 #faqContainer {
   width: 50vw;
 }
 
-
 @media only screen and (max-width:765px) {
-  #heroText {
-    margin-top: 5rem;
+  #heroText h1 {
+    padding-top: 3rem;
   }
 
   #navbarLogo {
@@ -55,21 +54,24 @@
   }
 }
 
-@media only screen and (max-width:550px) {
-  #card {
-    margin: 10px 5px;
+@media only screen and (max-width:425px) {
+  #heroText h1 {
+    font-size: 3em;
   }
 
-  #cardInside {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  #heroText h2 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  #heroText h1 {
+    font-size: 2.5em;
   }
 
-  /* #faqContainer {
-    width: 90vw;
-  } */
+  #heroText h2 {
+    font-size: 2em;
+  }
 }
 
 

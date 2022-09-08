@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import Navbar from "../../containers/Navbar";
+
 import { GiBrain } from "react-icons/gi";
+import { MdOutlineFileDownload } from 'react-icons/md';
 import styles from "../../styles/Home.module.css";
+import FileDownload from '../../components/FileDownload';
 
 type Submitted = Boolean;
 type Loading = Boolean;
@@ -95,6 +98,7 @@ const ImageGenerator: NextPage = () => {
                   </div>
                 </div>
               </form>
+              <FileDownload />
             </div>
           )}
           {submitted && loading && (
