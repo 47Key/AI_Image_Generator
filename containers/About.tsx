@@ -1,7 +1,9 @@
 import React from 'react';
-import { BiBrain } from 'react-icons/bi';
+import { FaBrain } from 'react-icons/fa';
 import { VscCircuitBoard } from 'react-icons/vsc';
 import { BsCardImage } from 'react-icons/Bs';
+// import { GiBrain } from "react-icons/gi";
+
 
 // const cardData = [
 //     {
@@ -23,7 +25,7 @@ const About = () => {
           <div className="container px-5 py-12 mx-auto flex flex-wrap">
             <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
               <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-                <div className="h-full mt-20 w-1 bg-purple-600 pointer-events-none"></div>
+                <div className="h-full mt-20 w-1 bg-white pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 p-0.5 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-rose-400 text-white relative right-1 z-10 title-font font-medium text-lg">
                 <div className="flex justify-center items-center w-full h-full bg-gray-900 rounded-full">
@@ -33,7 +35,7 @@ const About = () => {
               <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
                 <div className="flex-shrink-0 w-24 h-24 p-0.5 bg-gradient-to-r from-purple-500 to-rose-500 rounded-full inline-flex items-center justify-center">
                     <div className="flex justify-center items-center w-full h-full bg-gray-900 rounded-full text-white">
-                        <BiBrain size={70} />
+                        <FaBrain size={65} />
                     </div>
                 </div>
                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -44,7 +46,7 @@ const About = () => {
             </div>
             <div className="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
               <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-purple-600 pointer-events-none"></div>
+                <div className="h-full w-1 bg-white pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 p-0.5 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-rose-400 text-white relative right-1 z-10 title-font font-medium text-lg">
                 <div className="flex justify-center items-center w-full h-full bg-gray-900 rounded-full">
@@ -65,7 +67,7 @@ const About = () => {
             </div>
             <div className="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
               <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 mb-40 bg-purple-600 pointer-events-none"></div>
+                <div className="h-full w-1 mb-40 bg-white pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 p-0.5 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-rose-400 text-white relative right-1 z-10 title-font font-medium text-lg">
                 <div className="flex justify-center items-center w-full h-full bg-gray-900 rounded-full">

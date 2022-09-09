@@ -4,7 +4,6 @@ import LoadingSpinner from "../../components/LoadingSpinner";
 import Navbar from "../../containers/Navbar";
 import BackButton from '../../components/BackButton';
 
-import { GiBrain } from "react-icons/gi";
 import styles from "../../styles/Home.module.css";
 import ImageDownloadButton from "../../components/ImageDownloadButton";
 
@@ -64,19 +63,19 @@ const ImageGenerator: NextPage = () => {
   };
 
   return (
-    <div className="w-screen">
+    <div className="w-screen h-screen flex flex-col justify-center items-center">
       <Navbar />
       <div className="w-screen pb-20 flex flex-col justify-center items-center">
         <div className="w-screen flex flex-col justify-center items-center">
-          <div className="absolute top-28 left-0">
+          <div className="absolute top-20 -left-2">
             <BackButton />
           </div>
           {!submitted && !loading && (
             <div className="mt-20 w-screen flex flex-col justify-center items-center">
-              <h1 className="text-2xl">Please put your prompt below</h1>
+              <h1 className="text-center text-5xl px-5 pt-10 leading-snug">Please put your prompt below</h1>
 
               <form onSubmit={handleSubmit}>
-                <div className="flex flex-col w-[75vw] my-10 justify-center items-center">
+                <div className="flex flex-col sm:w-[90vw] lg:w-[50vw] my-10 justify-center items-center">
                   <label hidden htmlFor="prompt" />
                   <div className="relative w-full mx-10 p-[3px] rounded-xl bg-gradient-to-r from-purple-500 to-rose-400">
                     <input
@@ -84,11 +83,11 @@ const ImageGenerator: NextPage = () => {
                       type="string"
                       id="prompt"
                       placeholder="Type your prompt in here and press 'generate'"
-                      className="w-full p-4 text-black rounded-[10px] focus:outline-none"
+                      className="w-full p-4 text-black rounded-[10px] focus:outline-none flex-grow"
                     />
-                    <span className="absolute inset-y-0 inline-flex items-center right-3 text-purple-600">
+                    {/* <span className="absolute inset-y-0 inline-flex items-center right-3 text-purple-600">
                       <GiBrain size={30} />
-                    </span>
+                    </span> */}
                   </div>
 
                   <input hidden readOnly value={Date.now()} />
