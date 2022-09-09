@@ -8,7 +8,7 @@ const FAQ = () => {
         <h1 id={styles.heroText} className="text-5xl p-10 text-center leading-snug font-extrabold text-white">
           Frequently Asked Questions.
         </h1>
-      <div id={styles.faqContainer} className="text-center space-y-4 flex flex-col h-full justify-center items-center">
+      <div id={styles.faqContainer} className="text-center space-y-4 flex flex-col h-full w-[50vw] justify-center items-center">
         <div className="w-full p-0.5 rounded-xl bg-gradient-to-r from-purple-500 to-rose-400 ">
           <details className="group">
             <summary

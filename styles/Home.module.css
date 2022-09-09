@@ -15,38 +15,17 @@
 
 #navbarBackground {
   display: flex;
-  background: rgb(0 0 0 / 0.1);
-  backdrop-filter: blur(0.4rem);
-  /* backdrop-filter: opacity(1);   */
-  -webkit-backdrop-filter: blur(5rem);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 90;
 }
 
-#navbarLogo {
-  width: 50px;
-  height: 50px;
-  margin-left: 50px;
-}
-
-#heroText h1 {
-  font-size: 4em;
-}
-
-#faqContainer {
-  width: 50vw;
-}
-
 @media only screen and (max-width:765px) {
   #heroText h1 {
     padding-top: 3rem;
-  }
-
-  #navbarLogo {
-    width: 50px;
-    height: 50px;
   }
 
   #faqContainer {
@@ -80,27 +59,6 @@
 /*/////////////////////////// IMAGE GENERATION PAGE /////////////////////////// */
 /*///////////////////////////////////////////////////////////////////////////// */
 /*///////////////////////////////////////////////////////////////////////////// */
-
-/* #loadingSpinner {
-  border-top-color: transparent;
-  animation-name: loadingSpinner;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-} */
-/* 
-@keyframes loadingSpinner {
-  0% {
-    transform: rotate(0deg), scale(1.2);
-  }
-
-  50% {
-    transform: scale(1.5);
-  }
-
-  100% {
-    transform: rotate(360deg), scale(1.2);
-  }
-} */
 
 #imageContainer {
   max-width: 800px;
