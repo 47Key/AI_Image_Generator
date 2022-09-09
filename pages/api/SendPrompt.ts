@@ -7,12 +7,12 @@ interface Data {
 
 async function SendPrompt(req: NextApiRequest, res: NextApiResponse) {
 
-  // const body:Data = JSON.parse(req.body);
-  // const prompt:String = body.prompt;
+  const body:Data = JSON.parse(req.body);
+  const prompt:String = body.prompt;
   
   try {
     
-      const sendPrompt = await fetch(`https://stablediffusion.0gku54smtinjm.us-east-1.cs.amazonlightsail.com/`)
+      const sendPrompt = await fetch(`https://stablediffusion.0gku54smtinjm.us-east-1.cs.amazonlightsail.com/prompt?prompt=${prompt}`)
       .then((res) => res.json())
       .then((data) => {
         return res.status(200).json(data);
