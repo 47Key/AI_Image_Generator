@@ -5,7 +5,7 @@ import { SiMagento } from 'react-icons/si';
 const FAQ = () => {
   return (
     <div className="w-screen flex flex-col justify-center items-center pb-16">
-        <h1 id={styles.heroText} className="text-5xl p-10 text-center leading-snug font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-rose-400">
+        <h1 id={styles.heroText} className="text-5xl p-10 text-center leading-snug font-extrabold text-white">
           Frequently Asked Questions.
         </h1>
       <div id={styles.faqContainer} className="text-center space-y-4 flex flex-col h-full justify-center items-center">

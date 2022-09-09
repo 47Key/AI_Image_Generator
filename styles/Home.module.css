@@ -104,7 +104,12 @@
 
 #imageContainer {
   max-width: 800px;
+}
+
+#imageContainer img {
   max-height: 800px;
+  height: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -112,5 +117,14 @@
       width: 90%;
       margin: 2px;
       margin-bottom: 10px;
+  }
+
+  #imageContainerRow {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  #iconButton {
+    padding-top: 20px;
   }
 }

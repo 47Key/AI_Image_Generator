@@ -12,8 +12,6 @@ async function SendPrompt(req: NextApiRequest, res: NextApiResponse) {
   
   try {
     
-      // console.log(prompt);
-      // return res.status(200).json(prompt);
       const sendPrompt = await fetch(`https://stablediffusion.0gku54smtinjm.us-east-1.cs.amazonlightsail.com/prompt?prompt=${prompt}`)
       .then((res) => res.json())
       .then((data) => {
