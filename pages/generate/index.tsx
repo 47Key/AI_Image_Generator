@@ -85,9 +85,6 @@ const ImageGenerator: NextPage = () => {
                       placeholder="Type your prompt in here and press 'generate'"
                       className="w-full p-4 text-black rounded-[10px] focus:outline-none flex-grow"
                     />
-                    {/* <span className="absolute inset-y-0 inline-flex items-center right-3 text-purple-600">
-                      <GiBrain size={30} />
-                    </span> */}
                   </div>
 
                   <input hidden readOnly value={Date.now()} />

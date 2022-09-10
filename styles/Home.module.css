@@ -23,9 +23,20 @@
   z-index: 90;
 }
 
+#heroText h1 {
+  padding-bottom: 20px;
+  line-height: 120%;
+}
+
 @media only screen and (max-width:765px) {
   #heroText h1 {
     padding-top: 3rem;
+    font-size: 5rem;
+    padding-bottom: 10px;
+  }
+
+  #heroText h2 {
+    font-size: 4rem;
   }
 
   #faqContainer {
@@ -33,12 +44,18 @@
   }
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:525px) {
   #heroText h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   #heroText h2 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width:425px) {
+  #heroText h1 {
     font-size: 3em;
   }
 }
