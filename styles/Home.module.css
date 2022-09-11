@@ -15,8 +15,10 @@
 
 #navbarBackground {
   display: flex;
-  backdrop-filter: blur(0.5rem);
+  background: rgb(10 15 45 / 0.2);
+  backdrop-filter: blur(0.4rem);
   -webkit-backdrop-filter: blur(0.5rem);
+  /* background-blend-mode: luminosity; */
   position: fixed;
   top: 0;
   width: 100%;
