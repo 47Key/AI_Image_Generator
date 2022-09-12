@@ -10,7 +10,7 @@ const Hero = () => {
     >
       <div className="w-full px-4 pb-32 pt-48">
         <div id={styles.heroText} className="w-full mx-auto text-center">
-          <h1 className="font-extrabold text-8xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-rose-500">
+          <h1 className="leading-tight font-extrabold text-8xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-rose-500">
             Bring your Imagination
           </h1>
           <h2 className="text-white text-7xl">to Reality.</h2>
@@ -25,7 +25,7 @@ const Hero = () => {
           </h3>
 
           <div className="flex flex-wrap justify-center mt-8 gap-4">
-            <div id={styles.heroButton} className="cursor-pointer mt-5 p-[1px] flex flex-row justify-center items-center bg-gradient-to-r from-purple-500 to-rose-400 rounded-md hover:shadow-[-1px_1px_5px] hover:shadow-rose-300">
+            <div id={styles.heroButton} className="cursor-pointer mt-5 p-1 flex flex-row justify-center items-center bg-gradient-to-r from-purple-500 to-rose-500 rounded-lg hover:shadow-[-1px_1px_5px] hover:shadow-rose-300">
               <Link href="/generate">
                 <button className="w-full items-center border-0 py-1 px-3 focus:outline-none rounded-md md:mt-0 bg-gray-900 text-2xl">
                   Generate an Image

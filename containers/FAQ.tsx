@@ -9,10 +9,10 @@ const FAQ = () => {
           Frequently Asked Questions.
         </h1>
       <div id={styles.faqContainer} className="text-center space-y-4 flex flex-col h-full w-[50vw] justify-center items-center">
-        <div className="w-full p-[1px] rounded-xl bg-gradient-to-r from-purple-500 to-rose-400 ">
+        <div className="w-full p-1 rounded-lg bg-gradient-to-r from-purple-500 to-rose-400 ">
           <details className="group">
             <summary
-              className="flex items-center justify-between p-4 rounded-[11px] cursor-pointer bg-gray-900"
+              className="flex items-center justify-between p-4 rounded-md cursor-pointer bg-gray-900"
             >
               <h5 className="text-white font-extrabold">
                 What is AI Image Generation/Stable Diffusion?
@@ -33,11 +33,11 @@ const FAQ = () => {
           </details>
         </div>
 
-        <div className="w-full p-[1px] rounded-xl bg-gradient-to-r from-purple-500 to-rose-400 ">
+        <div className="w-full p-1 rounded-lg bg-gradient-to-r from-purple-500 to-rose-400 ">
           <details className="group">
 
             <summary
-              className="flex items-center justify-between p-4 rounded-[11px] cursor-pointer bg-gray-900"
+              className="flex items-center justify-between p-4 rounded-md cursor-pointer bg-gray-900"
               >
               <h5 className="font-extrabold text-white pr-5 ">
                 Is this service free?
