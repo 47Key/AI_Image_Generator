@@ -17,14 +17,15 @@ const FAQ = () => {
               <h5 className="text-white font-extrabold">
                 What is AI Image Generation/Stable Diffusion?
               </h5>
-                <SiMagento size={20} />
+              <SiMagento size={20} />
             </summary>
-            <div className="bg-gray-900 rounded-xl">
+            <div className="bg-gray-900 rounded-md">
               <p className="px-4 -mt-5 py-10 leading-relaxed text-white">
                 AI Image generation is a tool that allows you to generate images from text inputs, 
-                it allows you to turn your thoughts into a real image, regardless of traditional 
+                it allows you to turn your ideas into a real image, regardless of traditional 
                 artistic skills. 
-
+              </p>
+              <p className="px-4 -mt-5 leading-relaxed text-white pb-5">
                 Stable Diffusion is a type of AI Image generation, it uses a latent diffusion model 
                 to transform text into images. It can also generate images based off of an image input  
                 and text guidance. Which is a feature we are implementing soon.
@@ -45,12 +46,13 @@ const FAQ = () => {
               <SiMagento size={20} />
             </summary>
 
-            <div className="bg-gray-900 rounded-xl">
+            <div className="bg-gray-900 rounded-md">
               <p className="px-4 -mt-5 py-10 leading-relaxed text-white">
                 Yes it is free ! This link has only been shared with close friends and family, 
                 as well as potential employers of the developer. This website will soon require 
                 authentication and an account to use freely. For the time being it is completely free!
-
+              </p>
+              <p className="px-4 -mt-5 pb-5 leading-relaxed text-white">
                 I want to make sure everyone gets the chance at using this technology, and understand the 
                 future impact that these tools can have on humanity. AI is on the precipice of *magic* 
                 and human ingenuity.
