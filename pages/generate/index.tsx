@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
 import React, { useState } from "react";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import Navbar from "../../containers/Navbar";
-import BackButton from '../../components/BackButton';
+import BackButton from "../../components/BackButton";
 
 import styles from "../../styles/Home.module.css";
 import ImageDownloadButton from "../../components/ImageDownloadButton";
@@ -32,7 +32,6 @@ const ImageGenerator: NextPage = () => {
     event.preventDefault();
 
     try {
-
       // Set submitted & loading states
       setSubmitted(true);
       setLoading(true);
@@ -43,12 +42,11 @@ const ImageGenerator: NextPage = () => {
         date: event.target[1].value,
       };
 
-    // Send prompt to it's api route handler
+      // Send prompt to it's api route handler
       const sendPromptToApi = await fetch("/api/SendPrompt", {
         method: "POST",
         body: JSON.stringify(prompt),
-      })
-      .catch((err: any) => {
+      }).catch((err: any) => {
         return err;
       });
 
@@ -72,7 +70,9 @@ const ImageGenerator: NextPage = () => {
           </div>
           {!submitted && !loading && (
             <div className="mt-20 w-screen flex flex-col justify-center items-center">
-              <h1 className="text-center text-5xl px-5 pt-10 leading-snug">Please put your prompt below</h1>
+              <h1 className="text-center text-5xl px-5 pt-10 leading-snug">
+                Please put your prompt below
+              </h1>
 
               <form onSubmit={handleSubmit}>
                 <div className="flex flex-col sm:w-[90vw] lg:w-[50vw] my-10 justify-center items-center">
@@ -114,11 +114,14 @@ const ImageGenerator: NextPage = () => {
               </h1>
               <div
                 id={styles.imageContainer}
-                className="p-1 sm:w-3/4 sm:h-3/4 md:w-3/4 md:h-3/4 2xl:w-1/2 2xl:h-1/2 bg-gradient-to-r from-purple-500 via-blue-500 to-rose-400 rounded-lg m-5"
+                className="p-1 sm:w-3/4 sm:h-3/4 md:w-3/4 md:h-3/4 2xl:w-1/2 2xl:h-1/2 bg-gradient-to-r from-purple-500 to-rose-400 rounded-lg m-5"
               >
                 <img className="rounded-md w-full h-full" src={picture} />
               </div>
-              <div id={styles.imageContainerRow} className="w-full flex flex-row justify-center items-center">
+              <div
+                id={styles.imageContainerRow}
+                className="w-full flex flex-row justify-center items-center"
+              >
                 <div className="flex flex-row justify-center items-center w-[300px] max-w-[300px] p-1 bg-gradient-to-r from-purple-500 to-rose-400 rounded-lg hover:shadow-[-1px_1px_5px] hover:shadow-rose-300">
                   <button
                     onClick={handleNewPrompt}
@@ -138,4 +141,3 @@ const ImageGenerator: NextPage = () => {
 };
 
 export default ImageGenerator;
-
