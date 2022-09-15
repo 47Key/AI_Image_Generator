@@ -44,12 +44,12 @@ const ImageGenerator: NextPage = () => {
       };
 
       // Send prompt to it's api route handler
-      // const sendPromptToApi = await fetch("/api/SendPrompt", {
-      //   method: "POST",
-      //   body: JSON.stringify(prompt),
-      // }).catch((err: any) => {
-      //   return err;
-      // });
+      const sendPromptToApi = await fetch("/api/SendPrompt", {
+        method: "POST",
+        body: JSON.stringify(prompt),
+      }).catch((err: any) => {
+        return err;
+      });
 
       // Set Loading & Picture states back to display the generated image
       setLoading(false);
@@ -117,7 +117,7 @@ const ImageGenerator: NextPage = () => {
                 id={styles.imageContainer}
                 className="p-1 sm:w-3/4 sm:h-3/4 md:w-3/4 md:h-3/4 2xl:w-1/2 2xl:h-1/2 bg-gradient-to-r from-purple-500 to-rose-400 rounded-lg m-5"
               >
-                <img className="rounded-md w-full h-full" width={100} src={picture} />
+                <img className="rounded-md w-full h-full" alt="Stable Diffusion Generated Image" width={100} src={picture} />
               </div>
               <div
                 id={styles.imageContainerRow}
