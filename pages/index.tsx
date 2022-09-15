@@ -11,7 +11,7 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <div className="bg-mainBG bg-cover bg-center bg-no-repeat bg-fixed sm:-mt-32 lg:-mt-12 m-0 p-0">
+      <div className="bg-mainBG bg-cover bg-no-repeat bg-left sm:bg-center sm:bg-fixed sm:-mt-32 lg:-mt-12 m-0 p-0">
         <Head>
           <title>Stable Diffusion Image Generator</title>
           <meta name="description" content="Key AI" />

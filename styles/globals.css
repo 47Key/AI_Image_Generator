@@ -17,6 +17,10 @@
   --font-hero: 'Roboto', sans-serif;
 }
 
+details summary::-webkit-details-marker {
+  display:none;
+}
+
 html,
 body {
   padding: 0;
