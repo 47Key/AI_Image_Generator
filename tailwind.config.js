@@ -12,6 +12,9 @@ module.exports = {
         "hero": "var(--font-hero)",
         "main": "var(--font-main)",
        },
+      backgroundImage: {
+       'mainBG': "url('/hero_bg.jpeg')",
+      }
     },
   },
   plugins: [],

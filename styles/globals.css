@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+  /* background-image: linear-gradient(rgb(0 0 0 / 0.3),rgb(0 0 0 / 0.7)), url(../public/hero_bg.jpeg); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,11 +22,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(rgb(0 0 0 / 0.3),rgb(0 0 0 / 0.7)), url(../public/hero_bg.jpeg);
-  background-size: cover;
-  background-position: center;
+  /* background-image: linear-gradient(rgb(0 0 0 / 0.3),rgb(0 0 0 / 0.7)), url(../public/hero_bg.jpeg); */
+  /* background-size: cover; */
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   
   display: flex;
   flex-direction: column;
