@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <header id={styles.navbarBackground} className="flex backdrop-blur-md fixed top-0 w-full z-90 text-white body-font">
       <div className="flex flex-wrap w-screen p-2 flex-row justify-between items-center">
-        <div className="cursor-pointer sm:ml-0 md:ml-5">
+        <div className="cursor-pointer sm:ml-0 md:ml-5 z-90">
           <Link href="/">
             <Image width={50} height={50} alt="Key AI Logo" src={"/key_ai.png"} />
           </Link>
