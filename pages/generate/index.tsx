@@ -1,12 +1,10 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import React, { useState } from "react";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import Navbar from "../../containers/Navbar";
 import BackButton from "../../components/BackButton";
-
-import styles from "../../styles/Home.module.css";
 import ImageDownloadButton from "../../components/ImageDownloadButton";
+import styles from "../../styles/Home.module.css";
 
 type Submitted = Boolean;
 type Loading = Boolean;
