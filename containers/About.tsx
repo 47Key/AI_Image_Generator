@@ -1,7 +1,6 @@
 import React from "react";
-import { FaBrain } from "react-icons/fa";
+import { FaBrain, FaImage } from "react-icons/fa";
 import { VscCircuitBoard } from "react-icons/vsc";
-import { BsCardImage } from "react-icons/Bs";
 
 const About = () => {
     return (  
@@ -64,7 +63,7 @@ const About = () => {
               <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
                 <div className="flex-shrink-0 w-24 h-24 p-[5px] bg-gradient-to-r from-purple-500 to-rose-500 rounded-full inline-flex items-center justify-center">
                     <div className="flex justify-center z-10 items-center w-full h-full bg-gray-900 rounded-full text-white">
-                        <BsCardImage size={60} />
+                        <FaImage size={60} />
                     </div>
                 </div>
                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
