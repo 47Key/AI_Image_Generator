@@ -10,7 +10,7 @@ const Hero = () => {
     >
       <div className="w-full px-4 pb-32 pt-48">
         <div id={styles.heroText} className="w-full mx-auto text-center">
-          <h1 className="leading-tight font-extrabold text-8xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-rose-500">
+          <h1 className="leading-tight font-extrabold text-8xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-500">
             Bring your Imagination
           </h1>
           <h2 className="text-white text-7xl">to Reality.</h2>
