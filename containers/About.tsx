@@ -1,7 +1,7 @@
-import React from 'react';
-import { FaBrain } from 'react-icons/fa';
-import { VscCircuitBoard } from 'react-icons/vsc';
-import { BsCardImage } from 'react-icons/Bs';
+import React from "react";
+import { FaBrain } from "react-icons/fa";
+import { VscCircuitBoard } from "react-icons/vsc";
+import { BsCardImage } from "react-icons/Bs";
 
 const About = () => {
     return (  
