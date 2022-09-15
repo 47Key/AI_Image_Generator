@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import About from "../containers/About";
 import Hero from "../containers/Hero";
 import Navbar from "../containers/Navbar";
@@ -39,11 +40,11 @@ const Home: NextPage = () => {
         <div className="flex flex-row w-screen h-full justify-center items-center">
           <p className="px-5">Made by Key the Dev</p>
           <Link href="https://github.com/47Key/key_stable-diffusion">
-            <img
-              className="cursor-pointer"
-              width="30"
-              height="30"
-              src="github.svg"
+            <Image
+              className="cursor-pointer" 
+              width={30}
+              height={30}
+              src="/github.svg"
             />
           </Link>
         </div>
