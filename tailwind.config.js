@@ -13,7 +13,7 @@ module.exports = {
         "main": "var(--font-main)",
        },
       backgroundImage: {
-       'mainBG': "url('/hero_bg.jpeg')",
+       'mainBG': "linear-gradient(rgb(0 0 0 / 0.3),rgb(0 0 0 / 0.7)), url('/hero_bg.jpeg')",
       }
     },
   },

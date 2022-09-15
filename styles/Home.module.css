@@ -14,15 +14,8 @@
 }
 
 #navbarBackground {
-  display: flex;
-  background: rgb(10 15 45 / 0.2);
   backdrop-filter: blur(0.4rem);
-  -webkit-backdrop-filter: blur(0.5rem);
-  /* background-blend-mode: luminosity; */
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 90;
+  -webkit-backdrop-filter: blur(0.4rem);
 }
 
 #heroText h1 {
