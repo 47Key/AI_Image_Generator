@@ -42,6 +42,7 @@ const Home: NextPage = () => {
           <Link href="https://github.com/47Key/key_stable-diffusion">
             <Image
               className="cursor-pointer" 
+              alt="47Key Github Logo"
               width={30}
               height={30}
               src="/github.svg"
