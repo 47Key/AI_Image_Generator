@@ -4,7 +4,7 @@ import { VscCircuitBoard } from "react-icons/vsc";
 
 const About = () => {
     return (  
-        <section className="text-white body-font">
+        <section className="text-white body-font z-20">
           <div className="container px-5 py-12 mx-auto flex flex-wrap">
             
             <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">

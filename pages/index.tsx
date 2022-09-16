@@ -32,10 +32,10 @@ const Home: NextPage = () => {
           />
         </Head>
 
-        <Navbar />
         <Hero />
         <About />
         <FAQ />
+        <Navbar />
 
         <footer className={styles.footer}>
           <div className="flex flex-row w-screen h-full justify-center items-center">
