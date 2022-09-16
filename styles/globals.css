@@ -15,6 +15,7 @@
   font-family: var(--font-main, --font-hero);
   --font-main: 'Poppins', sans-serif;
   --font-hero: 'Roboto', sans-serif;
+  /* background-color: ; */
 }
 
 details summary::-webkit-details-marker {
