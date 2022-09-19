@@ -58,7 +58,7 @@ const Generate = () => {
     };
 
     return (
-        <div className="w-screen h-full pb-20 flex flex-col justify-center items-center">
+        <div className="w-screen h-screen pb-20 flex flex-col justify-center items-center">
           <div className="w-screen flex flex-col justify-center items-center">
             <div className="absolute top-20 left-1 z-0">
               <BackButton />
