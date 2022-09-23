@@ -40,12 +40,12 @@ const Generate = () => {
         };
 
         // Send prompt to it's api route handler
-        // const sendPromptToApi = await fetch("/api/SendPrompt", {
-        //   method: "POST",
-        //   body: JSON.stringify(prompt),
-        // }).catch((err: any) => {
-        //   return err;
-        // });
+        const sendPromptToApi = await fetch("/api/SendPrompt", {
+          method: "POST",
+          body: JSON.stringify(prompt),
+        }).catch((err: any) => {
+          return err;
+        });
 
         // Set Loading & Picture states back to display the generated image
         setLoading(false);
