@@ -35,7 +35,7 @@ const ImageGenerator: NextPage = () => {
         <Navbar />
         
         <footer className={styles.footer}>
-          <div className="flex flex-row w-screen h-full justify-center items-center">
+          <div className="flex flex-row w-screen h-full justify-center items-center mt-32">
             <p className="px-5">Made by Key the Dev</p>
             <Link href="https://github.com/47Key/key_stable-diffusion">
               <Image
