@@ -10,7 +10,7 @@ import Generate from "../../containers/Generate";
 const ImageGenerator: NextPage = () => {
   return (
     <div className={styles.container}>
-      <div className="bg-mainBG bg-cover bg-center bg-no-repeat bg-fixed">
+      <div className="bg-mainBG bg-cover bg-center bg-no-repeat bg-fixed min-h-screen flex flex-col items-center justify-center">
         <Head>
           <title>Stable Diffusion Image Generator</title>
           <meta name="description" content="Key AI" />
@@ -31,13 +31,16 @@ const ImageGenerator: NextPage = () => {
           />
         </Head>
         
-        <Generate />
+        {/* <Generate /> */}
+        <div className="w-full sm:w-3/4 lg:w-1/2 rounded-md flex items-center justify-center bg-indigo-800">
+          <h2 className="text-white">Currently Under Maintenance</h2>
+        </div>
         <Navbar />
         
         <footer className={styles.footer}>
           <div className="flex flex-row w-screen h-full justify-center items-center mt-32">
             <p className="px-5">Made by Key the Dev</p>
-            <Link href="https://github.com/47Key/key_stable-diffusion">
+            <Link href="https://github.com/47Key/AI_Image_Generator">
               <Image
                 className="cursor-pointer" 
                 alt="47Key Github Logo"
